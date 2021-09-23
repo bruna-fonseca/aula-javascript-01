@@ -1,33 +1,32 @@
+// 1)      Criar Array com 10 itens ( de 1 a 10).
+// a)       Exibir no console o total de itens.
+// b)      Exibir no console os itens nas posições: 1, 3, 5, 8.
 
-let fruta = '';
+const arr1 = ['espinafre', 'mouse', 'granito', 'teclado', 'morango', 'leite de coco', 'abacaxi', 'caderno', 'batata', 'coentro'];
 
-if (fruta === 'maçã') {
-   console.log('Não vendemos esta fruta aqui');
-} else if (fruta === 'kiwi') {
-   console.log('Estamos com escassz de kiwis');
-} else if (fruta === 'melancia') {
-   console.log('Aqui está, são 3 reais o quilo');
-} else {
-   console.log('Procure o administrador do sistema!');
-}
+console.log(arr1.length);
+console.log(arr1[0], arr1[2], arr1[4], arr1[7]);
 
-function salaryIncrease(wage) {
-  let increase, total;
-  if (wage <= 280) {
-    increase = wage * 0.20;
-    total = wage + increase;
-    return `salário antes ${wage} - percentual aplicado de 20% - valor do aumento ${increase} - aumento total ${total}`;
-  } else if (wage > 280 && wage < 700) {
-    increase = wage * 0.15;
-    total = wage + increase;
-    return `salário antes ${wage} - percentual aplicado de 15% - valor do aumento ${increase} - aumento total ${total}`; 
-  } else if (wage > 700 && wage < 1500) {
-    increase = wage * 0.10;
-    total = wage + increase;
-    return `salário antes ${wage} - percentual aplicado de 10% - valor do aumento ${increase} - aumento total ${total}`;
-  } else if (wage >= 1500) {
-     increase = wage * 0.05;
-    total = wage + increase;
-    return `salário antes ${wage} - percentual aplicado de 5% - valor do aumento ${increase} - aumento total ${total}`;
-  }
-}
+
+// 2)      Criar Array com 5 itens (nome de filmes).
+// a)       Exibir no console o total de itens.
+// b)      Exibir no console os itens nas posições: 2, 4.
+// c)       Exibir no console o item na primeira posição.
+
+const movies = ['a chegada', 'interestelar', 'atomica', 'a criada', 'parasita'];
+
+console.log(movies.length);
+console.log(movies[1], movies[3]);
+console.log(movies[0]);
+
+
+// 3)      Criar Array com 6 itens (nome de músicas).
+// a)       Exibir no console o total de itens.
+// b)      Exibir no console os itens nas posições : 1, 2, 6, 8.
+// c)       Exibir no console o item na última posição.
+
+const songs = ['gods menu', 'im your girl', 'you', 'into the new world', 'red light', 'bad, sad and mad'];
+
+console.log(songs.length);
+console.log(songs[0], songs[1], songs[5], songs[7]);
+console.log(songs[songs.length - 1]);
