@@ -1,62 +1,55 @@
-//       Criar um array com valores numéricos:  25, 23, 11, 55, 30,  6, 4, 21, 34, 89, 56.
-// a)       Coloque eles em ordem crescente.
-// b)      Exibir no Console.
+// a) Exibir no console a posição da letra h na string txt.
 
-let arr1 = [25, 23, 11, 55, 30,  6, 4, 21, 34, 89, 56];
-arr1.sort((a, b) => a - b);
-console.log(arr1);
+let txt = 'abcdefghijklm';
+console.log(txt.indexOf('h'));
 
+// b) Exibir no console a palavra bananas, use o método slice.
 
-// 2)      Dado um array com os times: Santos, Sport, Santa Cruz, Vasco, Chapecó.
-
-// a)       Adicionar o time "Flamengo" no final do array.
-// b)      Remover o time que está no início do array.
-// c)       Adicionar o time "Palmeiras" no início do array.
-// d)      Adicionar o time "Grêmio" no final do array.
-// e)      Adicionar os times "São Paulo" e "Santos" do início do array.
-// f)        Exibir, no console, a quantidade de elementos no array.
-// g)       Remover o time que está no final do array.
-// h)      Exibir, no console, em ordem crescente os times que estão no array.
-
-const teams = ['Santos', 'Sport', 'Santa Cruz', 'Vasco', 'Chapecó'];
-teams.push('Flamengo');
-teams.shift();
-teams.unshift('Palmeiras');
-teams.push('Grêmio');
-teams.unshift('São Paulo', 'Santos');
-console.log(teams.length);
-teams.pop();
-teams.sort();
-console.log(teams);
+txt = 'Posso comer bananas o dia todo';
+console.log(txt.slice(12, 18));
 
 
-// 3)      Criar um array contendo 7 atividades que você faz durante o dia.
-// a)       Exibir no console as atividades na ordem inversa.
-// b)      Selecionar e exibir no console, os elementos nas posições 3 e 6.
-// c)       Exibir no console seu array transformado em string. Substituir a vírgula pelo símbolo " - " (hífen).
-// d)      Criar um array com 2 atividades que você mais gosta e juntar com o array das atividades que você faz durante o dia. E exibir no console o resultado.
+// c) Substituir a palavra "Olá" pela palavra "Bem vindo", e exibir no console.
+txt = 'Olá, mundo';
+console.log(txt.replace('Olá', 'Bem vindo'));
 
-let atividadesDiaria = ['acordar', 'escovar os dentes', 'alongar', 'estudar', 'almoçar', 'beber água', 'alimentar o gato'];
+// d) Converter o texto em letras maiúsculas e exibir no console.
+txt = 'Olá, mundo';
+console.log(txt.toUpperCase());
 
-console.log(atividadesDiaria.reverse());
-console.log(atividadesDiaria[2], atividadesDiaria[5]);
-console.log(atividadesDiaria.join('-'));
+// e) Converter o texto em letras minúsculas e exibir no console.
+txt = 'Olá, mundo';
+console.log(txt.toLowerCase());
 
-let atividadesDiaria2 = ['escutar podcast', 'ficar no twitter'];
-let conca = atividadesDiaria.concat(atividadesDiaria2);
+// f) Exibir no console o tamanho da string.
+txt = 'Posso comer bananas o dia todo';
+console.log(txt.length);
 
-console.log(conca);
+// g) Concatenar as strings e exibir no console.
+let str = 'Hello ';
+let str2 = 'World';
+console.log(str.concat(str2));
 
+// h) Ordenar o array de frutas em ordem alfabética e exibir no console
+const fruits = ['Banana', 'Orange', 'Apple', 'Kiwi'];
+console.log(fruits.sort());
 
-// 4)      Criar um array com o nome de 5 cidades.
-// a)       Exibir, no console, em ordem crescente os times que estão no array.
-// b)      Remover a cidade que está no início do array.
-// c)       Remover a cidade que está no final do array.
-// d)      Exibir, no console, em ordem crescente os times que estão no array
+// i) Exibir no console o array de frutas, Remover Banana e Kiwi do array de frutas e exibir no console o novo array.
+let fruitsCopy = ['Banana', 'Orange', 'Apple', 'Kiwi'];
+fruitsCopy.pop();
+fruitsCopy.shift();
+console.log(fruitsCopy);
 
-let cities = ['recife', 'jampa', 'salvador', 'natal', 'olinda'];
+// j) Exibir no console o array de frutas, adicionar Uva, Caju e Kiwi no array de frutas e exibir no console o novo array.
 
-console.log(cities.sort());
-cities.shift();
-cities.pop();
-console.log(cities.sort());
+let fruitsCopy1 = ['Banana', 'Orange', 'Apple'];
+fruitsCopy1.push('Uva', 'Caju', 'Kiwi');
+console.log(fruitsCopy1);
+
+// k) Exibir no console o array de frutas, adicionar Pera e Manga no início do array de frutas, remover  o último item do array e exibir no console o novo array.
+
+let fruitsCopy2 = ['Banana', 'Orange', 'Apple'];
+fruitsCopy2.unshift('Pera', 'Manga');
+fruitsCopy2.pop();
+console.log(fruitsCopy2);
+

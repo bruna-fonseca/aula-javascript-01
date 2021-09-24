@@ -1,32 +1,28 @@
-// 1)      Criar Array com 10 itens ( de 1 a 10).
-// a)       Exibir no console o total de itens.
-// b)      Exibir no console os itens nas posições: 1, 3, 5, 8.
+// 1)      Criar 3 variáveis:
+// a)       A primeira variável deverá conter o seu nome. 
+// b)      A segunda variável deverá conter a sua idade.
+// c)       Converter a segunda variável para string.
+// d)      A terceira variável deverá conter a concatenação das duas variáveis anteriores.
+// e)      Exibir no console a terceira variável.
+// f)        Exibir no console o tamanho da terceira variável.
 
-const arr1 = ['espinafre', 'mouse', 'granito', 'teclado', 'morango', 'leite de coco', 'abacaxi', 'caderno', 'batata', 'coentro'];
+const name = 'Bruna';
+const age = 22;
+const parsedAge = String(age);
+console.log(parsedAge);
 
-console.log(arr1.length);
-console.log(arr1[0], arr1[2], arr1[4], arr1[7]);
-
-
-// 2)      Criar Array com 5 itens (nome de filmes).
-// a)       Exibir no console o total de itens.
-// b)      Exibir no console os itens nas posições: 2, 4.
-// c)       Exibir no console o item na primeira posição.
-
-const movies = ['a chegada', 'interestelar', 'atomica', 'a criada', 'parasita'];
-
-console.log(movies.length);
-console.log(movies[1], movies[3]);
-console.log(movies[0]);
+const conca = name + age;
+console.log(conca, conca.length);
 
 
-// 3)      Criar Array com 6 itens (nome de músicas).
-// a)       Exibir no console o total de itens.
-// b)      Exibir no console os itens nas posições : 1, 2, 6, 8.
-// c)       Exibir no console o item na última posição.
+// 2)      Criar 2 variáveis:
+// a)       A primeira variável deverá conter o valor 17.
+// b)      A segunda variável deverá conter o valor 28.
+// c)       Converter os valores das duas variáveis
+// d)       Exibir no console a terceira variável.
 
-const songs = ['gods menu', 'im your girl', 'you', 'into the new world', 'red light', 'bad, sad and mad'];
+const seventeen = 17;
+const twentyEight = 28;
+const parsedNumbers = seventeen.toString() + twentyEight.toString();
+console.log(parsedNumbers);
 
-console.log(songs.length);
-console.log(songs[0], songs[1], songs[5], songs[7]);
-console.log(songs[songs.length - 1]);
