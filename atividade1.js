@@ -1,28 +1,33 @@
-// 1)      Criar 3 variáveis:
-// a)       A primeira variável deverá conter o seu nome. 
-// b)      A segunda variável deverá conter a sua idade.
-// c)       Converter a segunda variável para string.
-// d)      A terceira variável deverá conter a concatenação das duas variáveis anteriores.
-// e)      Exibir no console a terceira variável.
-// f)        Exibir no console o tamanho da terceira variável.
+// 1)      Dada as strings abaixo: dominio1 e dominio2.
+//  a)       dominio1 = "mundojs"
+// b)      dominio2 = "google"
+// c)       Concatenar as strings para exibir a mensagem: Olá mundojs! O site www.google.com te ajuda a achar muitos materiais de estudo.
 
-const name = 'Bruna';
-const age = 22;
-const parsedAge = String(age);
-console.log(parsedAge);
-
-const conca = name + age;
-console.log(conca, conca.length);
+const dom1 = 'mundojs';
+const dom2 = 'google';
+console.log(`Olá ${dom1}! O site www.${dom2}.com te ajudar achar muitos materiais de estudo`);
 
 
-// 2)      Criar 2 variáveis:
-// a)       A primeira variável deverá conter o valor 17.
-// b)      A segunda variável deverá conter o valor 28.
-// c)       Converter os valores das duas variáveis
-// d)       Exibir no console a terceira variável.
 
-const seventeen = 17;
-const twentyEight = 28;
-const parsedNumbers = seventeen.toString() + twentyEight.toString();
-console.log(parsedNumbers);
+// 2)      Dada as strings: valorA e valor B.
+//  a)       valorA = "casa"
+// b)      valorB = "asa"
+// c)       Transformar todas as letras em maiúsculas usando toUpperCase().
+// d)      Exibir no console.
+// e)      Comparar se a string valorB tem todos os caracteres contidos na string valorB.
+// f)        Exibir no console.
 
+ let valorA = 'casa';
+let valorB = 'asa';
+
+valorA.toUpperCase();
+valorB.toUpperCase();
+const comparacao = valorA.localeCompare(valorB);
+console.log(comparacao);
+
+
+// 3)      Dada a string valorA = "substring(): Aprenda a utilizar.", utilizando o método substring, exibir no console: Aprenda a utilizar.
+
+const substr = 'substring(): Aprenda a utilizar.';
+const resultado = substr.substring(13, 32);
+console.log(resultado);
