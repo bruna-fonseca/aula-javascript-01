@@ -1,21 +1,33 @@
-// 1)      Criar um array com os nomes de 7 cidades de Pernambuco:
-// a)       Ordenar seus elementos na ordem invertida.
-// b)      Exibir no console.
-// c)    Adicionar duas cidades usando splice().
-// d)      Exibir no console.
+// 1)      Criar uma função que exibe no console um array com os nomes de 3 estados da região Norte do Brasil:
+// a)       Ordenar os elementos do array na ordem invertida
 
-let pernambucoCities = ['recife', 'olinda', 'petrolina', 'garanhuns', 'bonito', 'paudalho', 'gravatá'];
-console.log(pernambucoCities.reverse());
-
-let addCities = pernambucoCities.splice(0, 0, 'pesqueira', 'serra talhada');
-console.log(pernambucoCities);
+const northStates = () => {
+  let states = ['amazonas', 'acre', 'roraima'];
+  states.reverse();
+  return states;
+};
 
 
-// 2)      Criar um array com os valores 1,4,8,6,9,2,6,7,3,0,5
-// a)       Obter qual o index onde está o elemento 9.
-// b)      Exibir no console qual a posição no array em que o elemento 9 está.
+// 2)      Criar uma função que recebe duas strings:
+// a)       Transformar todas as letras em maiúsculas do primeiro parâmetro usando toUpperCase().
+// b)      Concatenar as duas strings e retornar o resultado.
+// c)       Chamar a função e exibir no console o resultado.
 
-const arr = [1,4,8,6,9,2,6,7,3,0,5];
+const concatStrings = (string1, string2) => {
+  const concat = string1.toUpperCase().concat(string2);
+  return concat;
+};
 
-console.log(arr.length);
-console.log(arr.indexOf(9));
+console.log(concatStrings('string ', 'no js'));
+
+// 3)      Criar uma função que retorne 17 vezes a palavra Repetição.
+// a)       Chamar a função e exibir no console o resultado.
+
+const repeat = () => {
+  for (let contador = 1; contador <= 17; contador++) {
+    console.log('Repetição');
+  }
+  return;
+};
+
+console.log(repeat());

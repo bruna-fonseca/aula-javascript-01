@@ -1,27 +1,33 @@
-// 1)      Para a string texto = "Todos pensam em mudar a humanidade e ninguém pensa em mudar a si mesmo.", exibir no console:
-// a)       O número de caracteres da string.
-// b)      A string com todas suas letras em maiúsculo.
-// c)       O número de vogais da string.
-// d)      A string com todas suas letras em minúsculo.
-// e)      Fazer a busca pela palavra humanidade e exibir o index onde ela está
+// 1)  Criar uma função para receber  uma string como parâmetro:
+// a)  Contar a quantidade de palavras repetidas em uma frase e retornar o total.
+// b)  Chamar a função e exibir o resultado no console.
 
-let str = 'Todos pensam em mudar a humanidade e ninguém pensa em mudar a si mesmo.';
-console.log(str.length);
-let str1 = str.split('').filter(letter => 'aeioué'.includes(letter)).length;
-console.log(str1);
+const repeatWord = (phrase, word) => {
+   const repeat = phrase.split(' ').filter(wordEl => wordEl === word).length;
+  return repeat;
+};
 
 
-// 2)      Percorrer os números pares menores que 100.
-// a)       Adicionar em um array.
-// b)      Transformar o array em string.
-// c)       Exibir no console.
+// 2)  Criar uma função que receba um array com 5 números como parâmetros:
+// a)  Inverter o array e retornar o resultado.
+// b)  Chamar a função e exibir o resultado no console.
 
-let evenNumber = [];
+const numbersReversed = arrNumbers => {
+  const reversed = arrNumbers.reverse();
+  return reversed;
+};
 
-for (let contador = 0; contador < 100; contador++) {
-  if (contador % 2 === 0) {
-    evenNumber.push(contador);
-  }
-}
+console.log(numbersReversed([5, 4, 3, 2, 1]));
 
-console.log(evenNumber.toString());
+
+// 3      Criar uma função que receba 4 números inteiros positivos como parâmetros:
+// a)     Calcular a soma de todos os números.
+// b)     Retornar o Resultado.
+// c)     Chamar a função e exibir o resultado no console.
+
+const sum = (numArr) => {
+  const total = numArr.reduce((previous, acc) => previous + acc, 0);
+  return total;
+};
+
+console.log(sum([1, 2, 3, 4, 5]));
