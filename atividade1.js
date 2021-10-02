@@ -1,33 +1,38 @@
-// 1)      Criar uma função que exibe no console um array com os nomes de 3 estados da região Norte do Brasil:
-// a)       Ordenar os elementos do array na ordem invertida
+// 1)      Criar uma função anônima para exibir no console um array com os nomes de 5 capitais da região Nordeste do Brasil:
+// a)       Transformar todos os elementos em letras maiúsculas.
 
-const northStates = () => {
-  let states = ['amazonas', 'acre', 'roraima'];
-  states.reverse();
-  return states;
-};
+const citiesToUpperCase = (function() {
+  const cities = ['manaus', 'belém', 'macapá', 'palmas', 'boa vista'];
+  const upperCased = cities.map(city => city.toUpperCase());
+  return upperCased;
+})();
 
+console.log(citiesToUpperCase);
 
-// 2)      Criar uma função que recebe duas strings:
-// a)       Transformar todas as letras em maiúsculas do primeiro parâmetro usando toUpperCase().
-// b)      Concatenar as duas strings e retornar o resultado.
-// c)       Chamar a função e exibir no console o resultado.
+// 2)      Criar uma função anônima que retorna os números pares maiores que 100 e menores que 450.
+// a)       Chamar a função e exibir no console o retorno da função. 
 
-const concatStrings = (string1, string2) => {
-  const concat = string1.toUpperCase().concat(string2);
-  return concat;
-};
-
-console.log(concatStrings('string ', 'no js'));
-
-// 3)      Criar uma função que retorne 17 vezes a palavra Repetição.
-// a)       Chamar a função e exibir no console o resultado.
-
-const repeat = () => {
-  for (let contador = 1; contador <= 17; contador++) {
-    console.log('Repetição');
+const numbers = (function() {
+  let numbers = [];
+  for (let contador = 0; contador < 450; contador++) {
+    if (contador % 2 === 0) {
+      numbers.push(contador);
+    }
   }
-  return;
+  return numbers;
+})();
+
+console.log(numbers);
+
+
+// 3)      Criar uma função anônima que recebe quatro strings:
+// a)       Concatenar as strings e retornar o resultado.
+// b)      Chamar a função e exibir no console o resultado.
+
+
+const concatenar = (str1, str2, str3, str4) => {
+  const conca = `${str1} ${str2} ${str3} ${str4}`;
+  return conca;
 };
 
-console.log(repeat());
+console.log(concatenar('oi', 'tudo', 'bem', 'com voce?'));

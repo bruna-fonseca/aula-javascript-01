@@ -1,1 +1,1 @@
-# aula-funcao-javascript
+# aula-funcao-anonima-arrow-javascript
