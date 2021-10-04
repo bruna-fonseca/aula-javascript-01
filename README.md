@@ -1,1 +1,1 @@
-# aula-pratica-javascript-function-1
+# aula-pratica-javascript-function-2
