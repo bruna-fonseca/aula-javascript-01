@@ -1,20 +1,16 @@
-const h1 = document.querySelector('.hello-world');
-const p = document.getElementsByTagName('p');
-const btn = document.querySelector('#btn');
-const div = document.querySelector('.div');
+const inputName = document.querySelector('#nome');
 
-btn.addEventListener('click', () => {
-  const createHeading = document.createElement('h1');
-  createHeading.innerHTML = h1.textContent.toUpperCase();
-  const createP =  document.createElement('p');
-  const createP2 =  document.createElement('p');
-  div.appendChild(createHeading);
-  createP.innerHTML = p[0].textContent.toUpperCase();
-  div.appendChild(createP);
-  createP2.innerHTML = p[1].textContent.toUpperCase();
-  div.appendChild(createP2);
+inputName.addEventListener('change', ({ target }) => {
+  inputName.value = target.value.toUpperCase();
 });
 
-h1.addEventListener('mouseover', () => {
-  h1.style.color = 'red';
+const div = document.createElement('div');
+const inputAge = document.querySelector('#idade');
+
+inputAge.addEventListener('change', ({ target }) => {
+  const createH3 = document.createElement('h3');
+  createH3.innerHTML = `Daqui a 10 anos você terá ${Number(target.value) + 10}`;
+
+  div.appendChild(createH3);
+  document.body.appendChild(div);
 });
